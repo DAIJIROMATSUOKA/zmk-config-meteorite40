@@ -181,11 +181,3 @@
         13
     >;
 };
-
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 1000>;
-};
-
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
-};

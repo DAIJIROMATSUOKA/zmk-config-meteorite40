@@ -9,27 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mkp_input_listener {
-    /* 押している間だけ低速（精密）: layer 10 */
-
-    snipe {
-        layers = <10>;
-        input-processors = <&zip_xy_scaler 1 5>; /* 1/5 に減速（好みで調整） */
-        process-next;
-    };
-
-    /* （任意）押している間だけ高速: layer 11 */
-
-    fast {
-        layers = <11>;
-        input-processors = <&zip_xy_scaler 3 2>; /* 1.5倍（好みで調整） */
-        process-next;
-    };
-
-    /* 既存の設定は base として残す */
-
-    input-processors = <&zip_temp_layer 1 1000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 1000>; };
 
 &zip_temp_layer { require-prior-idle-ms = <200>; };
 

@@ -76,6 +76,26 @@
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <3 4>;
         };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <16 17>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <17 18>;
+        };
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <15 16>;
+        };
+
+        pastev {
+            bindings = <&kp LA(LG(V))>;
+            key-positions = <18 19>;
+        };
     };
 
     keymap {
@@ -93,7 +113,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -112,7 +132,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -131,7 +151,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -148,7 +168,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -165,7 +185,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up

@@ -159,6 +159,22 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+
+            /* 追加: 押している間だけ低速（layer 10） */
+    snipe {
+        layers = <10>;
+        input-processors = <&zip_xy_scaler 1 5>; /* 1/5 に減速 */
+        process-next;
+    };
+
+    /* 追加: 押している間だけ高速（layer 11） */
+    fast {
+        layers = <11>;
+        input-processors = <&zip_xy_scaler 3 2>; /* 1.5倍 */
+        process-next;
+    };
+
+
         input-processors =  <&zip_temp_layer 1 1000>,
                             <&sensor_rotation>,
                            <&motion_scaler>;

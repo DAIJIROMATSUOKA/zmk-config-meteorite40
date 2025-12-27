@@ -152,13 +152,6 @@
         invert-y = <INVERT_Y>;
     };
 
-&zip_temp_layer {
-    excluded-positions = <
-        16 // J
-        17 // K
-        18 // l
-    >;
-};
 
 
 
@@ -178,4 +171,12 @@
                                <&to_wheel>;
         };
     };
+};
+
+&zip_temp_layer {
+    excluded-positions = <
+        16 // J
+        17 // K
+        18 // l
+    >;
 };

@@ -152,14 +152,6 @@
         invert-y = <INVERT_Y>;
     };
 
-    &zip_temp_layer {
-    excluded-positions = <
-        11 // S
-        12 // D
-        13 // F
-    >;
-};
-
 
     trackball_listener {
         compatible = "zmk,input-listener";

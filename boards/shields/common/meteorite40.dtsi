@@ -159,7 +159,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors =  <&zip_temp_layer 1 10000>,
+        input-processors =  <&zip_temp_layer 1 1000>,
                             <&sensor_rotation>,
                            <&motion_scaler>;
 
@@ -180,4 +180,12 @@
         12
         13
     >;
+};
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 1 1000>;
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
 };

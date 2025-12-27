@@ -86,6 +86,16 @@
             bindings = <&kp LA(LG(V))>;
             key-positions = <18 19>;
         };
+
+        cw {
+            bindings = <&kp LG(W)>;
+            key-positions = <28 29>;
+        };
+
+        cq {
+            bindings = <&kp LG(Q)>;
+            key-positions = <30 29>;
+        };
     };
 
     macros {
@@ -112,7 +122,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -131,7 +141,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -142,15 +152,15 @@
         layer_2 {
             display-name = "FUNCTION";
             bindings = <
-&trans                    &kp PAGE_UP      &kp UP_ARROW    &kp HOME         &trans     &trans  &trans           &kp LG(RIGHT_BRACKET)  &trans       &trans
-&mt LSHFT LC(A)           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(E)  &trans  &kp LC(LS(TAB))  &kp LG(LEFT_BRACKET)   &kp LC(TAB)  &trans
-&trans                    &kp PAGE_DOWN    &none           &kp END          &none      &none   &none            &none                  &trans       &none   &trans  &trans
-&mt LEFT_GUI LS(LC(F12))  &kp LS(LC(F11))  &trans          &trans           &mo 7      &trans  &trans           &trans
+&trans                    &kp PAGE_UP      &kp UP_ARROW    &kp HOME         &trans     &trans     &trans           &kp LG(RIGHT_BRACKET)  &trans       &trans
+&mt LSHFT LC(A)           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(E)  &trans     &kp LC(LS(TAB))  &kp LG(LEFT_BRACKET)   &kp LC(TAB)  &trans
+&trans                    &kp PAGE_DOWN    &none           &kp END          &none      &none      &none            &none                  &trans       &none   &trans  &trans
+&mt LEFT_GUI LS(LC(F12))  &kp LS(LC(F11))  &trans          &trans           &mo 7      &kp LG(W)  &kp LG(Q)        &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -167,7 +177,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -184,7 +194,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up

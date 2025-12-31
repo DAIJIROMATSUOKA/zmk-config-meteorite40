@@ -35,14 +35,23 @@
             tap-ms = <25>;
         };
 
-        /* tap: X / double-tap: LANG2 / hold: RGUI */
+        /* tap: X / double-tap: LANG1 / hold: LGUI */
+        x_lang1_lgui: x_lang1_lgui {
 
-        x_lang2_rgui: x_lang2_rgui {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt RGUI X>, <&kp LANG2>;
         };
+        /* tap: C / double-tap: LANG2 */
+        c_lang2: c_lang2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C>, <&kp LANG2>;
+        };
+
+
     };
 
     combos {
@@ -136,7 +145,7 @@
             bindings = <
 &mt LCTRL Q     &kp W            &kp E         &kp R         &kp T            &kp Y            &kp U         &kp I         &kp O    &mt RCTRL P
 &mt LSHFT A     &kp S            &kp D         &kp F         &kp G            &kp H            &kp J         &kp K         &lt 4 L  &mt RSHFT SEMICOLON
-&mt LEFT_ALT Z  &x_lang2_rgui    &kp C         &kp V         &kp B            &lt 8 ENTER      &mkp MB4      &kp N         &kp M    &kp COMMA            &mt LEFT_GUI PERIOD  &mt RIGHT_ALT SLASH
+&mt LEFT_ALT Z  &x_lang1_lgui    &c_lang2      &kp V         &kp B            &lt 8 ENTER      &mkp MB4      &kp N         &kp M    &kp COMMA            &mt LEFT_GUI PERIOD  &mt RIGHT_ALT SLASH
 &lt 2 MINUS     &lt 3 BACKSPACE  &lt 10 SPACE  &lt 6 DELETE  &lt 7 BACKSPACE  &mt RSHFT ENTER  &lt 9 DELETE  &lt 12 ENTER
             >;
 

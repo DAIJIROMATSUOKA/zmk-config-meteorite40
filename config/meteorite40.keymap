@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt RGUI X>, <&kp LANG2>;
+            bindings = <&mt RGUI X>, <&kp LANG1>;
         };
         /* tap: C / double-tap: LANG2 */
         c_lang2: c_lang2 {

@@ -145,12 +145,12 @@
 &mt LCTRL Q     &kp W            &kp E         &kp R         &kp T            &kp Y            &kp U         &kp I         &kp O    &mt RCTRL P
 &mt LSHFT A     &kp S            &kp D         &kp F         &kp G            &kp H            &kp J         &kp K         &lt 4 L  &mt RSHFT SEMICOLON
 &mt LEFT_ALT Z  &mt RIGHT_GUI X  &kp C         &kp V         &kp B            &lt 8 ENTER      &mkp MB4      &kp N         &kp M    &kp COMMA            &mt LEFT_GUI PERIOD  &mt RIGHT_ALT SLASH
-&lt 12 ENTER    &lt 3 BACKSPACE  &lt 10 SPACE  &lt 2 DELETE  &lt 6 BACKSPACE  &mt RSHFT ENTER  &lt 9 DELETE  &lt 12 ENTER
+&lt 2 ENTER     &lt 3 BACKSPACE  &lt 10 SPACE  &lt 6 DELETE  &lt 7 BACKSPACE  &mt RSHFT ENTER  &lt 9 DELETE  &lt 12 ENTER
             >;
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -169,7 +169,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -188,7 +188,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -205,7 +205,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -222,7 +222,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -242,7 +242,7 @@
 &trans                     &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans  &trans  &trans  &trans  &trans  &trans
 &trans                     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans  &trans  &trans  &trans  &trans  &trans
 &mt LEFT_ALT LS(NUMBER_0)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans                     &trans            &trans            &mo 7             &trans  &trans  &trans  &trans
+&trans                     &trans            &trans            &trans            &trans  &trans  &trans  &trans
             >;
         };
 

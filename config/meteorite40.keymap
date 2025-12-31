@@ -36,6 +36,13 @@
         };
 
         /* tap: X / double-tap: LANG2 / hold: RGUI */
+        x_lang2_rgui: x_lang2_rgui {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RGUI X>, <&kp LANG2>;
+        };
+
     };
 
     combos {
